@@ -42,7 +42,7 @@ public class HwTest {
     public void setDriver() {
     
         driver = driverFactory.setUp();
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this)
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
    
