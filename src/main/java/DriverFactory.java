@@ -17,8 +17,9 @@ public class DriverFactory {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android" );
         desiredCapabilities.setCapability("appium:automationName", "UIAutomator2");
-        desiredCapabilities.setCapability(APP_PACKAGE, "com.android.settings");
-        desiredCapabilities.setCapability(APP_ACTIVITY, "com.android.settings.Settings");
+        desiredCapabilities.setCapability(APP_PACKAGE, "ru.filit.mvideo.b2c");
+        desiredCapabilities.setCapability(APP_ACTIVITY, "ui.splash.view.SplashScreen");
+        desiredCapabilities.setCapability(No_RESET, true)
 
         URL remouteUrl = new URL("http://localhost:4723");
 
@@ -30,8 +31,4 @@ public class DriverFactory {
         return driver;
     }
 
-    public AndroidDriver setUp() {
-        return null;
-    }
-}
 
