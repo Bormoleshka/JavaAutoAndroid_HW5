@@ -65,6 +65,7 @@ public class HwTest {
         Assert.assertNotEquals(foundTitleText, foundSaleTitleText);
         driver.lockDevice(Duration.ofSeconds(3));
         Assert.assertEquals(television, searchText.getText());
+        swipe(Direction.LEFT, specifyCategoryPager);
         
         
     }
