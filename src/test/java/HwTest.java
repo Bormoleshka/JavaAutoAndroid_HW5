@@ -55,7 +55,7 @@ public class HwTest {
         swipe(Direction.DOWN);
         searchWidget.click();
         String television = "Телевизор";
-        searchText.sendKeys(tltvision);
+        searchText.sendKeys(television);
         driver.pressKey(new KeyEvent(AndroidKey.ENTER));
         String foundTitleText = foundTitle.getText();
         filterLabel.click();
